@@ -1,16 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
-});
 
-let myForm = document.getElementById('create-task-form');
-let myText = document.getElementById('new-task-description');
-let button = document.getElementById('submit-buttom');
-let myTasks = document.getElementById('tasks');
+  let myForm = document.getElementById("create-task-form");
+  let myText = document.getElementById("new-task-description");
+  let button = document.getElementById("submit-button");
+  let myTasks = document.getElementById("tasks");
 
-
-myForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-   let text = myText.value;
+  myForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let text = myText.value;
     console.log(text);
 
     const lists = document.createElement("li");
@@ -36,3 +34,4 @@ myForm.addEventListener("submit", (event) => {
       });
     });
   });
+});
